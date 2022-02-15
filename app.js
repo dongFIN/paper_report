@@ -54,11 +54,11 @@ var optionS =  JSON.parse(JSON.stringify(option))
 
 
 optionD['series'][0]['data'] = [
-    { value: 9, name: 'Authentication' },
+    { value: 4, name: 'Other' },
     { value: 3, name: 'Facial Expressions' },
     { value: 2, name: 'Handwriting' },
     { value: 4, name: 'Gesture Recognition' },
-    { value: 4, name: 'Other' }
+    { value: 9, name: 'Authentication' },
 ]
 optionH['series'][0]['data'] = [
     { value: 7, name: 'Mobile' },
@@ -92,6 +92,7 @@ chartS.querySelector("canvas").style.height = "400px"
 
 // 應用比較表的 Table
 var exampleModal = document.getElementById('exampleModal')
+console.log(exampleModal);
 exampleModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget

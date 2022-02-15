@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>report</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
     <script src="app.js" defer></script>
     <script src="echarts.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <meta name="referrer" content="no-referrer">
 </head>
 <body>
@@ -22,7 +22,7 @@
             <div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
                 </div>
                 <div class="modal-body">
@@ -33,7 +33,6 @@
             </div>
             </div>
         </div>
-
           
         <!-- echart -->
         <div id="chartContainer">
@@ -50,12 +49,12 @@
                 <div id="chartSignal" class="chart"></div>
             </div>
         </div>
-
+        
         <!-- table -->
         <div id="sortTable">
             <!-- Facial Expressions & Other -->
             <table class="table table-hover caption-top">
-                <caption>Facial Expressions & Other</caption>
+                <caption style="background-color: #9aca839a">Facial Expressions & Other</caption>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -155,29 +154,27 @@
                     
                 </tbody>
             </table>
-            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Summary
-              </button>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Summary</button>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                     <!-- Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. -->
-                
+                    
                     <div class="sumContainer">
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons" style="color: rgb(231, 73, 99);">task_alt</i>
+                            <div class="inline-block"> eSence是OpenSource的! 若要使用無線耳機可以使用 (IMU、Mic、Speaker)</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">臉上有哪個部位的肌肉具有代表性? 針對表情辨識可以想其他環境 如隱藏的真實表情之類</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
-                        </div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">表情辨識: 若單個角度影像有誤 或許可以用多個合成 (類似多車子環景效果)</div>
+                        </div> 
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">生物IOT: 在電線杆裝掃描裝置 預測走失貓狗可能出現的位置 (偏分析整合應用)</div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +182,7 @@
 
             <!-- Handwriting & Gesture Recognition -->
             <table class="table table-hover caption-top">
-                <caption>Handwriting & Gesture Recognition</caption>
+                <caption style="background-color: #ffdd6cb6">Handwriting & Gesture Recognition</caption>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -273,29 +270,26 @@
 
                 </tbody>
             </table>
-            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                Summary
-              </button>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Summary</button>
             <div class="collapse" id="collapseExample2">
                 <div class="card card-body">
                     <!-- Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. -->
-                
                     <div class="sumContainer">
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons" style="color: rgb(73, 146, 58);">highlight_off</i>
+                            <div class="inline-block">手勢辨識會不會RFC也可以做到? IMU已有很成熟的應用怎麼突破!</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons" style="color: rgb(231, 73, 99);">task_alt</i>
+                            <div class="inline-block">利用聲速的特性 將聲音拆成結構音和空氣音的可行性高！ (用訊號物理差異增加特徵)</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">EMG極限在哪? 是否有更適合應用它的環境?  → 空間繪圖增加力道(EMG肌肉出力)</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">寫字辨識 → 用聲波回推距離 實作不用充電的筆！  → (反向)用一支手機就可竊聽寫字的重要資料</div>
                         </div>
                     </div>
                 </div>
@@ -303,7 +297,7 @@
 
             <!-- Authentication -->
             <table class="table table-hover caption-top">
-                <caption>Authentication</caption>
+                <caption style="background-color: #92d2e29a">Authentication</caption>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -319,7 +313,7 @@
                     <tr>
                         <th scope="row">ConRes</th>
                         <td>Respiratory</td>
-                        <td>Wi-fi (CSI)</td>
+                        <td>Wi-Fi (CSI)</td>
                         <td>Laptop</td>
                         <td>20 user, 90%</td>
                         <td>Office (small)</td>
@@ -427,36 +421,91 @@
 
                 </tbody>
             </table>
-            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                Summary
-              </button>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">Summary</button>
             <div class="collapse" id="collapseExample3">
                 <div class="card card-body">
                     <!-- Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. -->
                 
                     <div class="sumContainer">
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons" style="color: rgb(73, 146, 58);">highlight_off</i>
+                            <div class="inline-block">身分驗證若用太間接的方法有準確性的疑慮、情境模擬太單純不夠可靠</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons" style="color: rgb(231, 73, 99);">task_alt</i>
+                            <div class="inline-block">針對步態聲音需要多考慮鞋子、地板材質的影響；有特別討論Attack影響，並針對攻擊進行測試 (必要性?)</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">聲音可以穿透口罩 現在疫情需要戴口罩 感覺有情境可以想！</div>
                         </div>
                         <div class="sumLine">
-                            <i class="md-36  material-icons">help_outline</i>
-                            <div class="inline-block">123</div>
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">針對耳機的應用 討論左耳跟右耳的關聯性 (時間差、不完全對稱的訊號差異)</div>
+                        </div>
+                        <div class="sumLine">
+                            <i class="md-36  material-icons">bookmark</i>
+                            <div class="inline-block">利用入耳式的閉鎖效應 耳道吸音的差異做疾病偵測</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            
+        
+        <div class="sumContainer">
+            <div class="SumTitle">有興趣的方向</div>
+            <!-- <div class="sumLine">
+                <i class="md-36  material-icons">bookmark</i>
+                <div class="inline-block">聲音可以穿透口罩 現在疫情需要戴口罩 感覺有情境可以想！</div>
+            </div>
+            <div class="sumLine">
+                <i class="md-36  material-icons">bookmark</i>
+                <div class="inline-block">針對耳機的應用 討論左耳跟右耳的關聯性 (時間差、不完全對稱的訊號差異)</div>
+            </div>
+            <div class="sumLine">
+                <i class="md-36  material-icons">bookmark</i>
+                <div class="inline-block">利用入耳式的閉鎖效應 耳道吸音的差異做疾病偵測</div>
+            </div> -->
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <i class="md-24  material-icons">bookmark</i>Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <i class="md-24  material-icons">bookmark</i>Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <i class="md-24  material-icons">bookmark</i>Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+        </div>
+
     </div>
-    <footer></footer>
+    
+    <footer class="footer"></footer>
+    
+    
 </body>
 </html>
