@@ -1,6 +1,12 @@
-var chartDom = document.getElementById('chart');
-var myChart = echarts.init(chartDom);
+var chartD = document.getElementById('chartDomain');
+var chartH = document.getElementById('chartHardware');
+var chartS = document.getElementById('chartSignal');
+var myChartD = echarts.init(chartD);
+var myChartH = echarts.init(chartH);
+var myChartS = echarts.init(chartS);
 var option;
+var optionD, optionH, optionS;
+
 
 option = {
 tooltip: {
@@ -35,15 +41,69 @@ series: [
     labelLine: {
         show: false
     },
-    data: [
-        { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
-        { value: 484, name: 'Union Ads' },
-        { value: 300, name: 'Video Ads' }
-    ]
+    data: []
     }
 ]
 };
 
-option && myChart.setOption(option);
+console.log(option['series'][0]['data'])
+
+var optionD =  JSON.parse(JSON.stringify(option))
+var optionH =  JSON.parse(JSON.stringify(option))
+var optionS =  JSON.parse(JSON.stringify(option))
+
+
+optionD['series'][0]['data'] = [
+    { value: 9, name: 'Authentication' },
+    { value: 3, name: 'Facial Expressions' },
+    { value: 2, name: 'Handwriting' },
+    { value: 4, name: 'Gesture Recognition' },
+    { value: 4, name: 'Other' }
+]
+optionH['series'][0]['data'] = [
+    { value: 7, name: 'Mobile' },
+    { value: 4, name: 'Earphone' },
+    { value: 6, name: 'Antenna' },
+    { value: 5, name: 'Other' }
+]
+optionS['series'][0]['data'] = [
+    { value: 4, name: 'Wi-fi' },
+    { value: 2, name: 'Radar' },
+    { value: 3, name: 'sound' },
+    { value: 6, name: 'Ultrasonic' },
+    { value: 4, name: 'IMU' },
+    { value: 3, name: 'Other' }
+]
+
+optionD && myChartD.setOption(optionD);
+optionH && myChartH.setOption(optionH);
+optionS && myChartS.setOption(optionS);
+// console.log(option1['series'][0]['data'])
+// console.log(option2['series'][0]['data'])
+
+chartD.querySelector("canvas").style.width = "400px"
+chartD.querySelector("canvas").style.height = "400px"
+chartH.querySelector("canvas").style.width = "400px"
+chartH.querySelector("canvas").style.height = "400px"
+chartS.querySelector("canvas").style.width = "400px"
+chartS.querySelector("canvas").style.height = "400px"
+
+
+
+// 應用比較表的 Table
+var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  var titleText = recipient.split("/")[0]
+  var srcID = recipient.split("/")[1]
+
+  var modalsrc = exampleModal.querySelector('.modal-body img')
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  modalsrc.src = "https://i.imgur.com/"+srcID+".png"
+  modalTitle.textContent = titleText
+//   console.log(titleText,srcID)
+
+})

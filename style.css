@@ -1,10 +1,43 @@
 #mainBody{
-    margin: 0 10vw;
+    margin: 5vh 10vw 10vh 10vw;
 }
-
-#chart{
-    height: 500px; 
-    width: 500px; 
-    display: 
-    inline-block;
+.chart{
+    height: 400px; 
+    width: 400px; 
+    display: inline-block;
 }
+#chartContainer{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.chartTitle{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.inline-block{
+    display: inline-block;
+}
+.sumLine{
+    display: flex;
+    font-size: 20px !important;
+    margin-bottom: 10px;
+}
+button{
+    padding: 6px 6px 0px 6px  !important;
+    /* background-color: #afafaf !important; */
+}
+table{
+    margin-top: 70px !important;
+}
+img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #4c4c4c;
+}
+.material-icons.md-36 { font-size: 28px; margin: 0px 5px 0px 10px; }
