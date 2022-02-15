@@ -8,6 +8,7 @@
 }
 #chartContainer{
     padding-top: 50px;
+    margin-bottom: 150px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -26,10 +27,10 @@
     margin-bottom: 10px;
 }
 .SumTitle{
-    margin: 30vh 0 2vh 0;
+    margin: 20vh 0 2vh 0;
     font-size: 1.2rem;
-    background-color: rgba(219, 219, 219, 0.575);
-    padding-left: 10px;
+    background-color: rgba(133, 133, 133, 0.575);
+    padding: 10px 0 10px 10px;
 }
 caption{
     background-color: rgba(219, 219, 219, 0.575);
@@ -46,6 +47,30 @@ table{
 }
 img{
     width: 100%;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+footer{
+    margin-top: 8px !important;
+    font-size: 1.2rem;
+}
+.card-header{
+    font-size: 1.2rem;
+}
+#topTitle{
+    font-size: 4.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 60px;
+}
+#topText{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #585858;
+    margin: 20px 0 50px 0;
 }
 .footer{
     width: 100%;
