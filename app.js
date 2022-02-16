@@ -61,13 +61,13 @@ optionD['series'][0]['data'] = [
     { value: 9, name: 'Authentication' },
 ]
 optionH['series'][0]['data'] = [
-    { value: 7, name: 'Mobile' },
+    { value: 7, name: 'Mobile Phone' },
     { value: 4, name: 'Earphone' },
     { value: 6, name: 'Antenna' },
     { value: 5, name: 'Other' }
 ]
 optionS['series'][0]['data'] = [
-    { value: 4, name: 'Wi-fi' },
+    { value: 4, name: 'Wi-Fi' },
     { value: 2, name: 'Radar' },
     { value: 3, name: 'sound' },
     { value: 6, name: 'Ultrasonic' },
